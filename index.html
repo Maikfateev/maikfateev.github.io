@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-<title> My Website </title> 
-<style> 
-/* CSS for dark styling and red and blue accents */ 
-body { 
-background-color: #333; 
-color: #fff; 
-} 
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Website</h1>
+    </header>
 
-a { 
-color: blue; 
-} 
+    <!-- Photo slideshow -->
+    <div id="slideshow" class="slideshow">
+      <img src="image1.jpg" alt="image 1">
+      <img src="image2.jpg" alt="image 2">
+      <img src="image3.jpg" alt="image 3">
+    </div>
 
-.highlight { 
-color: red; 
-} 
+    <!-- Text about the site owner -->
+    <div class="about-section">
+      <h2>About the Site</h2>
+      <p>Welcome to my website! My name is John Smith and I am the owner of this site. I am a web developer and enjoy creating websites that are both visually appealing and easy to use. I hope you enjoy your visit!</p>
+    </div>
 
-/* CSS for responsive design */ 
-@media (max-width: 600px) { 
-/* CSS for mobile devices */ 
-} 
-
-@media (min-width: 600px) { 
-/* CSS for stationary monitors */ 
-} 
-</style> 
-</head> 
-<body> 
-
-<!-- Photo slideshow --> 
-<div id="slideshow"> 
-<img src="image1.jpg" alt="image 1" style="width:100%"> 
-<img src="image2.jpg" alt="image 2" style="width:100%"> 
-<img src="image3.jpg" alt="image 3" style="width:100%"> 
-</div> 
-
-<!-- Text about the owner of the site --> 
-<p> Welcome to my website! My name is John Smith and I am the owner of this site. I am a web developer and enjoy creating websites that are both visually appealing and easy to use. I hope you enjoy your visit! </p> 
-
-<!-- Social media buttons with links --> 
-<div> 
-<a href="https://www.facebook.com/"> <button>Facebook</button> </a> 
-<a href="https://www.twitter.com/"> <button>Twitter</button> </a> 
-<a href="https://www.instagram.com/"> <button>Instagram</button> </a> 
-</div> 
-
-</body> 
+    <!-- Social media buttons -->
+    <div class="social-section">
+      <h2>Connect with Me</h2>
+      <div class="social-btns">
+        <a href="https://www.facebook.com/" class="social-btn facebook-btn">
+          <i class="fa fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.twitter.com/" class="social-btn twitter-btn">
+          <i class="fa fa-twitter"></i> Twitter
+        </a>
+        <a href="https://www.instagram.com/" class="social-btn instagram-btn">
+          <i class="fa fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
